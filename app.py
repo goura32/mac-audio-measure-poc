@@ -10,10 +10,13 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 import numpy as np
+import matplotlib as mpl
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 
 from audio import SAMPLE_RATE, response_db, summarize_recording, make_sweep
+
+mpl.rcParams['font.family'] = ['Hiragino Sans', 'sans-serif']
 
 try:
     import sounddevice as sd
