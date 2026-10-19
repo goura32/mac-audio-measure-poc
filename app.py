@@ -45,7 +45,7 @@ class Application:
         self.input_device.grid(row=1, column=1, columnspan=4, sticky='ew', padx=6, pady=2)
         ttk.Button(panel, text='デバイス更新', command=self.refresh_devices).grid(row=0, column=5, padx=5)
         ttk.Label(panel, text='出力デジタル振幅').grid(row=2, column=0, sticky='w')
-        self.level = tk.DoubleVar(value=0.08)
+        self.level = tk.DoubleVar(value=0.02)
         ttk.Scale(panel, from_=0.01, to=0.40, variable=self.level, orient=tk.HORIZONTAL).grid(
             row=2, column=1, columnspan=3, sticky='ew', padx=6)
         self.level_label = ttk.Label(panel)
